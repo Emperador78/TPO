@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Mirza-SemiBold';
+    src: url(../assets/font/Mirza/Mirza-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url(../assets/font/Inter/static/Inter-ExtraLight.ttf);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+/* contenedor Principal*/
+
+.contenedor-guarderia{
+position:absolute;
+top: 250px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-area: "s1" "s2""s3" "s4";
+    height: auto;
+
+
+}
+/* main */
+.s1 {
+    grid-area: "s1";
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/img/main.jpg);
+
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+
+}
+
+/* secciones */
+#s2 {
+grid-area: "s2";
+    display: flex;
+    
+    flex-direction: column;
+    
+    align-items: center;
+    height: 1fr;
+    
+}
+
+#s2>.cuadro2 {
+    display: flex;
+    width: 50%;
+    height: auto;
+    color: rgb(85, 84, 84);
+    background-color: rgb(207, 205, 205);
+    border-radius: 25px;
+    font-family: 'Inter-ExtraLight';
+    font-size: 22px;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+}
+
+#s3 {
+    grid-area: "s3";
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px 0px 10px 0px;
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(97, 97, 96);
+}
+
+#s4 {
+    grid-area: "s4";
+        display: flex;
+        
+        flex-direction: column;
+        
+        align-items: center;
+        height: 1fr;
+        
+    }
+    
+#p1 {
+    font-family: 'Roboto';
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(74, 73, 75);
+}
+
+#p2 {
+    font-family: 'Playfair Display', serif;;
+    font-size: x-large;
+}
+
+
+.cuadro {
+    width: 30%;
+    height: auto;
+    background-color: beige;
+
+    border-radius: 10px;
+    margin: 50px 50px 50px 50px;
+    padding: 40px;
+    top: 5%;
+    right: 10px;
+}
+
+h1 {
+    font-family: 'Mirza-SemiBold';
+    padding: 25px;
+}
