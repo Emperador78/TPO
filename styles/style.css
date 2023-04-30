@@ -1,22 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Sofia Sans Extra Condensed', serif;
     font-size: 2em;
 }
 
 /* Cabecera */
-#header{
+#header {
     width: 100%;
     height: 130px;
     background-color: #EEC373;
 }
 
 /* Logo / imagen logo */
-#header #logo img{
+#header #logo img {
     float: left;
     width: auto;
     height: 100px;
@@ -25,7 +25,7 @@ body{
 }
 
 /* Header H1 */
-#header h1{
+#header h1 {
     text-align: center;
     padding-top: 25px;
     padding-right: 100px;
@@ -35,18 +35,18 @@ body{
     font-family: 'Sofia Sans Extra Condensed', serif;
     text-transform: uppercase;
     letter-spacing: 10px;
-    text-shadow: 0px 2px 1px #876445;   
+    text-shadow: 0px 2px 1px #876445;
 
 }
 
 /* Header H1 vinculo*/
-#header h1 a{
+#header h1 a {
     color: #603601;
     text-decoration: none;
 }
 
 /* Nav */
-#nav{
+#nav {
     display: block;
     float: left;
     width: 100%;
@@ -57,7 +57,7 @@ body{
 }
 
 /* Nav / indices (paginas) */
-#nav ul li{
+#nav ul li {
     font-size: 24px;
     font-family: 'Sofia Sans Extra Condensed', serif;
     display: inline-block;
@@ -67,57 +67,59 @@ body{
 }
 
 /* Nav / indices (paginas) link */
-#nav ul li a{
+#nav ul li a {
     display: block;
     color: white;
     text-decoration: none;
 }
 
 /* main */
-main{
+main {
     float: left;
     display: block;
     width: 100%;
     height: 100%;
     background-color: #EEC373;
-    min-height:380px;
+    min-height: 380px;
 }
 
 /* TARJETAS */
-.d1{
+.d1 {
     display: block;
     float: left;
     width: 500px;
     height: 125px;
     border: 1px solid #603601;
     background-color: white;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin-top: 25px;
     margin-left: 50px;
     padding: 10px;
     text-align: center;
 }
-.d2{
+
+.d2 {
     display: block;
     float: right;
     width: 700px;
     height: 300px;
     border: 1px solid #603601;
     background-color: white;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin-top: 25px;
     margin-right: 50px;
     padding: 10px;
     text-align: center;
 }
-.d3{
+
+.d3 {
     display: block;
     float: left;
     width: 500px;
     height: 125px;
     border: 1px solid #603601;
     background-color: white;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin-top: 25px;
     margin-left: 50px;
     padding: 10px;
@@ -126,7 +128,7 @@ main{
 
 
 /*FOOTER*/
-#footer{
+#footer {
     float: left;
     width: 100%;
     height: 50px;
@@ -136,7 +138,7 @@ main{
     color: white;
 }
 
-#footer p{
+#footer p {
     display: inline-block;
     letter-spacing: 3px;
     text-align: center;
@@ -145,32 +147,33 @@ main{
     color: white;
 }
 
-#footer a{
+#footer a {
     text-decoration: none;
     color: white;
 }
- 
-.formulario{
+
+.formulario {
     width: 50%;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
     border: 1px solid #603601;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
-.formulario > h3{
+.formulario>h3 {
     text-align: center;
-    color:#603601;
+    color: #603601;
 }
 
-form{
+form {
     width: 100%;
     margin: 0 auto;
 }
 
-input, textarea{
+input,
+textarea {
     width: 50%;
     margin-left: 25%;
     font-size: 20px;
@@ -182,7 +185,7 @@ input, textarea{
     outline: none;
 }
 
-.boton{
+.boton {
     margin-left: 0px;
     color: white;
     background-color: #603601;
