@@ -74,8 +74,24 @@
     <!-- Fin del menú de navegación -->
 
     <!-- Inicio de las secciones -->
+    <form class="filter">
+      <!--checkboxs-->
+      <fieldset class="categories" id="checkCat"></fieldset>
+
+      <!--search-->
+      <fieldset class="search-field">
+        <label for="search">
+          <input type="text" name="search" id="search" />
+        </label>
+      </fieldset>
+    </form>
+
     <main class="main-shop">
+      <!--cards-->
       <div class="shop-cards-container" id="products-container"></div>
+
+      <!--no results-->
+      <div class="no-results-container" id="no-results"></div>
     </main>
     <!-- Fin de las secciones -->
 
