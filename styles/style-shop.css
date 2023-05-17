@@ -198,6 +198,10 @@ body{
   justify-content: space-around;
 }
 
+.shop-card-details:hover {
+  transform: scale(1, 1);
+}
+
 .shopE-img-details {
   display: flex;
   height: 100%;
@@ -292,11 +296,11 @@ body{
   margin-left: -15px;
 }
 
-#form-search-bttn i:hover {
+#form-search-button i:hover {
   color: #fff;
 }
 
-#form-search-bttn i {
+#form-search-button i {
   color: #603601;
   background-color: #EEC373;
 }
