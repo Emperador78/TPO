@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    font-size: 1em;
+    margin-top: -16px;
+}
+
+/* Cabecera */
+#header{
+    width: 100%;
+    height: 130px;
+    background-color: #EEC373;
+}
+
+/* Logo / imagen logo */
+#header #logo img{
+    float: left;
+    width: auto;
+    height: 100px;
+    padding-top: 15px;
+    padding-left: 15px;
+    box-sizing:initial;
+}
+
+/* Header H1 */
+#header h1{
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 60px;
+    color: #603601;
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 2px 3px 3px #876445;
+    -webkit-text-stroke: thin;   
+}
+
+/* Header H1 vinculo*/
+#header h1 a{
+    color: #603601;
+    text-decoration: none;
+
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+
+/* Nav */
+#nav{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #603601;
+    text-decoration: none;
+}
+
+/* Nav / indices (paginas) */
+#nav ul li{
+    font-size: 24px;
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+/* Nav / indices (paginas) link */
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.form_control{
+    margin: 10px;
+    padding: 10px;
+}
+.card{
+    margin: 10px;
+    padding: 10px;
+}
+.h2{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/*FOOTER*/
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: #603601;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+}
+
+#footer p{
+    display: inline;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    color: white;
+    margin-top: 10px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
