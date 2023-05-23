@@ -48,19 +48,20 @@ a:link {
 /* contenedor Principal*/
 
 .contenedor-guarderia {
-    position: absolute;
-    top: 250px;
-    display: grid;
-    grid-template-columns: repeat(4, 1/4fr);
+    position: relative;
+
+    display: inline-block;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-area: "s1 s1 s1 s1"
-        "s2 s2 s2 s2"
-        "s3 s3 s3 s3"
-        "s4 s4 s4 s4";
+    grid-area: "s1"
+        "s2"
+        "s3"
+        "s4";
     height: auto;
-    background-color: #EEC373;
+    background-color: white;
+    width: 1fr;
 
-
+    /* EEC373 */
 }
 
 /* main */
@@ -68,8 +69,9 @@ a:link {
     grid-area: "s1";
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 1fr;
     height: auto;
+    min-height: 600px;
     background-image: url(../assets/img/main.jpg);
     background-repeat: no-repeat;
     /* Do not repeat the image */
@@ -84,9 +86,10 @@ a:link {
     display: flex;
 
     flex-direction: column;
-    width: auto;
+    width: 1fr;
     align-items: center;
     height: auto;
+    background-color: #EEC373;
 
 }
 
@@ -124,14 +127,15 @@ a:link {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px 10px 0px;
     height: auto;
     font-family: 'Inter-extralight';
-    font-size: 20px;
+    font-size: large;
     text-align: center;
     color: rgb(97, 97, 96);
     background-color: #EEC373;
     align-content: center;
+    width: 1fr;
     /*box-shadow: 50px grey;*/
 }
 
@@ -161,17 +165,19 @@ a:link {
 
 #p1 {
     font-family: 'IMF';
-    font-size: 36;
+    font-size: x-large;
     font-weight: bolder;
     color: rgb(74, 73, 75);
     text-transform: uppercase;
     padding: 20px;
+    overflow: hidden;
 }
 
 #p2 {
     font-family: 'NunitoExtraLight';
     font-size: large;
     padding: 40px;
+    overflow: hidden;
 }
 
 
@@ -179,7 +185,6 @@ a:link {
     width: 22%;
     height: auto;
     background-color: beige;
-
     border-radius: 10px;
     margin: 50px 50px 50px 50px;
     padding: 0px;
@@ -206,4 +211,385 @@ h1 {
     border-color: whitesmoke; */
 
 
+}
+
+@media (max-width:800px) {
+    .contenedor-guarderia {
+        position: relative;
+
+        display: inline-block;
+        width: 1fr;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-area: "s1 "
+            "s2 "
+            "s3 "
+            "s4 ";
+        height: auto;
+        background-color: #EEC373;
+
+
+    }
+
+    #s2>.Contenedor-imagenes {
+
+        display: flex;
+        height: auto;
+        margin: 5px;
+        flex-direction: row;
+    }
+
+    .cuadro {
+        width: 45%;
+        height: auto;
+        background-color: beige;
+
+        border-radius: 5px;
+        margin: 25px;
+        padding: 0px;
+        top: 0%;
+        right: 0px;
+    }
+
+    /* main */
+    .s1 {
+        grid-area: "s1";
+        display: flex;
+        flex-direction: row;
+        width: 1fr;
+        height: auto;
+        min-height: 200px;
+        background-image: url(../assets/img/main.jpg);
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        /* Resize the background image to cover the entire container */
+        background-color: #EEC373;
+    }
+
+    /* secciones */
+    #s2 {
+        grid-area: "s2";
+        display: flex;
+
+        flex-direction: column;
+        width: 1fr;
+        align-items: center;
+        height: auto;
+
+    }
+
+    #s2>.cuadro2 {
+        display: flex;
+        width: 75%;
+        height: auto;
+        color: rgb(24, 23, 23);
+        background-color: beige;
+        border-radius: 15px;
+        font-family: 'Inter-ExtraLight';
+        font-size: small;
+        padding: 45px 15px 45px 15px;
+        text-align: center;
+        margin: 12px;
+    }
+
+    #s2>.Contenedor-imagenes {
+
+        display: flex;
+        height: auto;
+        margin: 12px;
+        flex-direction: row;
+    }
+
+    #s2>.Contenedor-imagenes>.imagen {
+
+        display: flex;
+        width: 100px;
+        height: 50px;
+    }
+
+    #s3 {
+        grid-area: "s3";
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: 5px 0px 5px 0px;
+        height: auto;
+        font-family: 'Inter-extralight';
+        font-size: small;
+        text-align: center;
+        color: rgb(97, 97, 96);
+        background-color: #EEC373;
+        align-content: center;
+        width: 1fr;
+    }
+
+    #s4 {
+        grid-area: "s4";
+        display: flex;
+        font-family: 'Monserrat';
+        font-size: medium;
+        flex-direction: column;
+        border-radius: 5px;
+        align-items: center;
+        height: 10%;
+        width: auto;
+        top: 70%;
+        background-color: beige;
+        position: fixed;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+
+    .textoChico {
+
+        color: rgb(236, 230, 230);
+        font-family: 'Inter-Thin';
+        font-size: small;
+    }
+
+    #p1 {
+        font-family: 'IMF';
+        font-size: large;
+        font-weight: bolder;
+        color: rgb(74, 73, 75);
+        text-transform: uppercase;
+        padding: 7px;
+        overflow: hidden;
+    }
+
+    #p2 {
+        font-family: 'NunitoExtraLight';
+        font-size: large;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+
+
+
+    h1 {
+        font-family: 'IMF';
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: medium;
+    }
+
+    .imagen:hover {
+        transform: scale(2, 2);
+
+    }
+
+    .imagen {
+        padding: 3px;
+        /* border-style: double;
+    border-width: 1px;
+    border-color: whitesmoke; */
+
+    }
+}
+
+
+@media (max-width:650px) {
+    .contenedor-guarderia {
+        position: relative;
+
+        display: inline-block;
+        width: 1fr;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-area: "s1 "
+            "s2 "
+            "s3 "
+            "s4 ";
+        height: auto;
+        background-color: #EEC373;
+
+
+    }
+
+    #s2>.Contenedor-imagenes {
+
+        display: flex;
+        height: auto;
+        margin: 5px;
+        flex-direction: row;
+    }
+
+    .cuadro {
+        width: 65%;
+        height: auto;
+        background-color: beige;
+
+        border-radius: 5px;
+        margin: 12px;
+        padding: 0px;
+        top: 0%;
+        right: 0px;
+    }
+
+    /* main */
+    .s1 {
+        grid-area: "s1";
+        display: flex;
+        flex-direction: row;
+        width: 1fr;
+        height: auto;
+
+        background-image: url(../assets/img/main.jpg);
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        /* Resize the background image to cover the entire container */
+        background-color: #EEC373;
+    }
+
+    /* secciones */
+    #s2 {
+        grid-area: "s2";
+        display: flex;
+
+        flex-direction: column;
+        width: 1fr;
+        align-items: center;
+        height: auto;
+
+    }
+
+    #s2>.cuadro2 {
+        display: flex;
+        width: 75%;
+        height: auto;
+        color: rgb(24, 23, 23);
+        background-color: beige;
+        border-radius: 5px;
+        font-family: 'Inter-ExtraLight';
+        font-size: small;
+        padding: 25px 5px 35px 5px;
+        text-align: center;
+        margin: 7px;
+    }
+
+    #s2>.Contenedor-imagenes {
+
+        display: flex;
+        height: auto;
+        margin: 12px;
+        flex-direction: row;
+    }
+
+    #s2>.Contenedor-imagenes>.imagen {
+
+        display: flex;
+        width: 75px;
+        height: 35px;
+    }
+
+    #s3 {
+        grid-area: "s3";
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px 0px 5px 0px;
+        height: auto;
+        font-family: 'Inter-extralight';
+        font-size: small;
+        text-align: center;
+        color: rgb(97, 97, 96);
+        background-color: #EEC373;
+        align-content: center;
+        width: 1fr;
+    }
+
+    #s4 {
+        grid-area: "s4";
+        display: flex;
+        font-family: 'Monserrat';
+        font-size: small;
+        flex-direction: column;
+        border-radius: 5px;
+        align-items: center;
+        height: auto;
+        width: auto;
+        top: 70%;
+        background-color: beige;
+        position: fixed;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+
+    .textoChico {
+
+        color: rgb(236, 230, 230);
+        font-family: 'Inter-Thin';
+        font-size: small;
+    }
+
+    #p1 {
+        font-family: 'IMF';
+        font-size: medium;
+        font-weight: bolder;
+        color: rgb(74, 73, 75);
+        text-transform: uppercase;
+        padding: 7px;
+        overflow: hidden;
+    }
+
+    #p2 {
+        font-family: 'NunitoExtraLight';
+        font-size: medium;
+        padding: 7px;
+        overflow: hidden;
+    }
+
+
+
+
+    h1 {
+        font-family: 'IMF';
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: medium;
+    }
+
+    .imagen:hover {
+        transform: scale(2, 2);
+
+    }
+
+    .imagen {
+        padding: 3px;
+        /* border-style: double;
+    border-width: 1px;
+    border-color: whitesmoke; */
+
+    }
+
+    /*FOOTER*/
+    #footer {
+        float: left;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        background-color: #603601;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+    }
+
+    #footer p {
+        display: inline;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Sofia Sans Extra Condensed', serif;
+        color: white;
+    }
+
+    #footer a {
+        text-decoration: none;
+        color: white;
+    }
 }
