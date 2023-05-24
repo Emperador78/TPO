@@ -80,30 +80,30 @@
       <h2 class="h2 text-center">Dejanos tus comentarios</h2>
       <div class="form_control row justify-content-center">
         <div class="col-5">
-          <form>
+          <form name="formulario" method="POST" action="https://formspree.io/f/xjvddybn" onsubmit="return validarFormulario()">
             <div class="form-floating mb-3" >
-              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="Nombre">
               <label for="nombre">Nombre</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+              <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="Apellido">
               <label for="apellido">Apellido</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" class="form-control" id="email" placeholder="Email" name="Email">
               <label for="email">Email</label>
             </div>
             <div class="form-floating mb-3">
-              <textarea class="form-control" id="comentarios" rows="3" placeholder="Comentarios" style="height: 100px"></textarea>
+              <textarea class="form-control" id="comentarios" rows="3" placeholder="Comentarios" style="height: 100px" name="Comentario"></textarea>
               <label for="comentarios">Comentarios</label>
             </div>
             <div class="form_control row justify-content-center">
-              <button class="btn btn-success col-5" type="submit">Enviar</button>
+              <button class="btn btn-success col-5" type="submit" name="Boton">Enviar</button>
             </div>
           </form>
         </div>
         <div class="alert alert-primary text-center" role="alert">
-          Te responderemos a la brevedad
+          Te responderemos a la Brevedad
         </div>
       </div>
 
@@ -125,5 +125,7 @@
         </p>
     </footer>
     <!-- Fin del pie de pagina -->
+    <!--Script-->
+    <script src="../js/contact.js"></script>
   </body>
 </html>
