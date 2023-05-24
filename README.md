@@ -10,10 +10,10 @@ This page is a group project from Codo a Codo's Fullstack Python course.
 
 ## Staff
 
-- Raul Guanca
-- Juan Pablo Castelnuovo
-- Vanesa Vitelli
-- Manlio Wydler
+- Raul Guanca (Pet shop)
+- Juan Pablo Castelnuovo (Inicio y Contacto)
+- Vanesa Vitelli (Tips de cuidado)
+- Manlio Wydler (Guarderia)
 
 ## Contributing
 
