@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    font-size: 2em;
+}
+
+/* Cabecera */
+#header{
+    width: 100%;
+    height: 130px;
+    background-color: #EEC373;
+}
+
+/* Logo / imagen logo */
+#header #logo img{
+    float: left;
+    width: auto;
+    height: 100px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+/* Header H1 */
+#header h1{
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 60px;
+    color: #603601;
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 0px 2px 1px #876445;   
+}
+
+/* Header H1 vinculo*/
+#header h1 a{
+    color: #603601;
+    text-decoration: none;
+}
+
+/* Nav */
+#nav{
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #603601;
+    text-decoration: none;
+}
+
+/* Nav / indices (paginas) */
+#nav ul li{
+    font-size: 24px;
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+/* Nav / indices (paginas) link */
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.slider-frame {
+    width: auto;
+    height: auto;
+    margin: 50px auto -10px;
+    overflow: hidden;
+
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media (max-width:800px) {
+    /* Logo / imagen logo */
+    #header #logo img{
+        float: left;
+        width: auto;
+        height: 80px;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    /* Header H1 */
+    #header h1{
+        padding-top: 40px;
+        text-decoration: none;
+        font-size: 50px;
+        font-family: 'Sofia Sans Extra Condensed', serif;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-shadow: 0px 2px 1px #876445;   
+    }
+
+    /* Header H1 vinculo*/
+    #header h1 a{
+        text-decoration: none;
+    }
+
+    .slider-frame {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    #header {
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+        width: 100%;
+        height: 180px;
+        background-color: #EEC373;
+    }
+
+    #header #logo img{
+        float: left;
+        width: auto;
+        height: 100px;
+        padding-top: 5px;
+        padding: 1px;
+        margin-top: 10px;
+    }
+
+    #header h1{
+        float: left;
+        text-align: center;
+        width: auto;
+        height: 100px;
+        margin-top: 5px;
+        padding: 1px;
+    }
+
+    #nav{
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+        width: 100%;
+        height: 170px;
+        background-color: #603601;
+        text-decoration: none;
+
+    }
+    
+    #nav ul li{
+        display: block;
+        width: 100%;
+        height: 30px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 18px;
+    }
+    
+    .slider-frame {
+        width: auto;
+        height: auto;
+        margin-top: 170px;
+        overflow: hidden;
+    }
+
+}
+
+
+
+/*FOOTER*/
+#footer{
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #603601;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+}
+
+#footer p{
+    display: inline;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Sofia Sans Extra Condensed', serif;
+    color: white;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
