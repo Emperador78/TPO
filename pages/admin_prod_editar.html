@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- Hoja de estlos CSS -->
+  <link rel="stylesheet" type="text/css" href="../styles/style-shop.css" />
+
+  <!-- Conexión con fuentes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed" />
+
+  <!-- Conexión con icono -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Conexión favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../assets/img/favicon-16x16.png" sizes="16x16" />
+
+  <title>Editar Producto</title>
+</head>
+
+<body>
+  <!-- Inicio de la cabecera -->
+  <header id="header">
+    <div id="logo">
+      <a href="../index.html"><img src="../assets/img/logo.png" alt="logotipo" /></a>
+    </div>
+    <h1>
+      <a href="../index.html"> Pet'n Love </a>
+    </h1>
+  </header>
+  <!-- Fin de la cabecera -->
+
+  <!-- Menú de navegación -->
+  <nav id="nav">
+    <ul>
+      <li>
+        <a href="../index.html">Inicio</a>
+      </li>
+      <li>
+        <a href="./tips de cuidado.html">Tips de cuidado</a>
+      </li>
+      <li>
+        <a href="./guarderia.html">Guardería</a>
+      </li>
+      <li>
+        <a href="./shop.html" class="active">Pet shop</a>
+      </li>
+      <li>
+        <a href="./contact.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Fin del menú de navegación -->
+
+  <main>
+    <div class="container">
+      <form style="background-color: rgb(142, 142, 143);margin:10px auto ; width: 400px; padding: 20px;">
+        <h1 style="font-size: xx-large;">Editar Producto</h1>
+        <div class="input-group mb-3">
+
+          <input type="number" class="form-control" placeholder="ID" aria-label="ID" aria-describedby="basic-addon1"
+            name="id" id="id" disabled>
+        </div>
+        <div class="input-group mb-3">
+
+          <input type="text" class="form-control" placeholder="Categoria" aria-label="Categoria"
+            aria-describedby="basic-addon1" name="category" id="category">
+        </div>
+        <div class="input-group mb-3">
+
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+            aria-describedby="basic-addon1" name="name" id="name">
+        </div>
+        <div class="input-group mb-3">
+
+          <input type="text" class="form-control" placeholder="Imagen" aria-label="Imagen"
+            aria-describedby="basic-addon1" name="image" id="image">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input type="number" class="form-control" placeholder="Precio" aria-label="Precio"
+            aria-describedby="basic-addon1" name="price" id="price">
+          <span class="input-group-text">.00</span>
+        </div>
+        <div class="input-group mb-3">
+
+          <input type="text" class="form-control" placeholder="Descripcion del Producto"
+            aria-label="Descripcion del Producto" aria-describedby="basic-addon1" name="description" id="description">
+        </div>
+        <div class="input-group mb-3">
+
+          <input type="text" class="form-control" placeholder="Descripcion Detallada del Producto"
+            aria-label="Descripcion Detallada del Producto" aria-describedby="basic-addon1" name="descriptionExt"
+            id="descriptionExt">
+        </div>
+
+
+
+
+        <button type="button" class="btn btn-success" onclick="modificar()">Modificar</button>
+      </form>
+
+
+    </div>
+
+
+  </main>
+
+
+
+
+  <!-- Inicio del pie de pagina -->
+  <footer id="footer">
+    <p>
+      <a href="#"><i class="fa-brands fa-facebook-f" style="color: white"></i>
+        pet&love</a>
+    </p>
+    <p>-</p>
+    <p>
+      <a href="#"><i class="fa-brands fa-instagram" style="color: white"></i>
+        @pet&love</a>
+    </p>
+  </footer>
+  <!-- Fin del pie de pagina -->
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!--js-->
+
+  <script src="../js/prod_editar.js"></script>
+</body>
+
+</html>
