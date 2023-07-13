@@ -1,5 +1,5 @@
 # Pet'n Love Project
-La ruta para entrar a la zona de administracion es pages/admin.html
+# La ruta para entrar a la zona de administracion es pages/admin.html
 
 This page is a group project from Codo a Codo's Fullstack Python course.
 
